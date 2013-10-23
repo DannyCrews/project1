@@ -6,8 +6,8 @@ CongressWatch::Application.routes.draw do
   get "user/create"
   get "user/edit"
   get "user/update"
-  get "user/destroy"
-  get "legislators/:zipcode" => 'legislators#index'
+  get "user/hello"
+  # get "legislators/:zipcode" => 'legislators#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # You can have the root of your site routed with "root"

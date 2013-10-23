@@ -1,13 +1,20 @@
 CongressWatch::Application.routes.draw do
 
-  get "user/index"
-  get "user/show"
-  get "user/new"
-  get "user/create"
-  get "user/edit"
-  get "user/update"
-  get "user/hello"
-  # get "legislators/:zipcode" => 'legislators#index'
+  resources :legislators
+  resoures :pages
+  resources :subjects
+  resources :users
+
+
+
+  # get "users/index"
+  # get "users/show"
+  # get "users/new"
+  # get "users/create"
+  # get "users/edit"
+  # get "users/update"
+  # get "users/hello"
+  # # get "legislators/:zipcode" => 'legislators#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # You can have the root of your site routed with "root"

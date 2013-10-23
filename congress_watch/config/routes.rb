@@ -1,7 +1,7 @@
 CongressWatch::Application.routes.draw do
 
   resources :legislators
-  resoures :pages
+  resources :pages
   resources :subjects
   resources :users
 
